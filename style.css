@@ -12,10 +12,10 @@
 }
 
 :root{
-    --bg-color: #191f36;
-    --snd-bf-color: #262b40;
-    --text-color: white;
-    --main-color: #59b2f4;
+    --bg-color: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
+    --snd-bf-color: linear-gradient(to left, rgb(255, 255, 255), rgb(254, 215, 173));
+    --text-color: black;
+    --main-color: rgb(109, 67, 0);
 }
 
 html{
@@ -52,7 +52,8 @@ section{
 
 .logo{
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--main-color);
+    text-shadow: 0 0 10px rgb(109, 67, 0);
     font-weight: 700;
     cursor: default;
 }
@@ -131,7 +132,7 @@ section{
 
 .social-media a:hover{
     background: var(--main-color);
-    color: var(--snd-bf-color);
+    color: white;
     box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -142,13 +143,13 @@ section{
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color: white;
     letter-spacing: .1rem;
     font-weight: 600;
     transition: transform .2s ease;
 }
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .about{
@@ -197,7 +198,7 @@ section{
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--bg-color);
+    color: white;
     letter-spacing: .1rem;
     font-weight: 600;
     transition: transform .2s ease;
@@ -205,12 +206,13 @@ section{
     cursor: pointer;
 }
 .read-more-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
-.skills h2{
+.skill h2{
     margin-bottom: 5rem;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
+    text-align: center;
 }
 
 .skills-tools{
@@ -307,6 +309,7 @@ section{
     text-align: center;
     padding: 0 4rem;
     transition: .3s ease;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .project-box:hover .project-layer{
@@ -315,6 +318,7 @@ section{
 .project-layer h3{
     font-size: 2.5rem;
     margin: .3rem 0 1rem;
+
 }
 
 .project-layer p {
@@ -334,16 +338,65 @@ section{
 
 .project-layer a i{
     font-size: 2rem;
-    color: var(--snd-bf-color);
+    color: white;
 }
 
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--snd-bf-color);
+    /* min-height: 100vh; */
+}
 .contact h2{
     margin-bottom: 3rem;
     font-size: 5rem;
     text-align: center;
 }
 
+.contact h2 span{
+    color: black;
+}
+
 .contact form{
+    text-align: center;
+    width: 600px;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width: 48.5%;
+}
+
+.field .item{
+    width: 100%;
+    padding: 14px;
+    background: rgba(255, 231, 204, 0.989);
+    border: 2px solid var(--main-color);
+    outline: none;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+}
+
+.error-txt{
+    font-size: 14px;
+    text-align: left;
+    margin: -6px 0 10px;
+    color: red;
+    display: none;
+}
+
+.text-area .item{
+    resize: none;
+}
+/* .contact form{
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
@@ -376,7 +429,7 @@ section{
 .contact form textarea{
     resize: none;
     padding-top: 1rem;
-}
+} */
 
 .contact form .btn{
     margin-top: 2rem;
@@ -393,7 +446,9 @@ section{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--snd-bf-color);
+    background: rgba(255, 231, 204, 0.989);
+    border: 2px solid;
+    border-color: var(--main-color);
 }
 
 
@@ -409,9 +464,6 @@ section{
 }
 .mail-icon{
     color: var(--main-color);
-    /* background: var(--main-color); */
-    /* border-radius: 50%;
-    padding: .5rem 1rem; */
 }
 
 .footer-iconTop a{
@@ -430,7 +482,7 @@ section{
 
 .footer-iconTop a i{
     font-size: 2.4rem;
-    color: var(--snd-bf-color);
+    color: white;
 }
 
 /* BREAKPOINT */

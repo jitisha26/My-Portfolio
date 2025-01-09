@@ -39,7 +39,7 @@
                 <a href="https://github.com/jitisha26"><i class="fa-brands fa-github"></i></a>
                 <a href="https://x.com/jitishaazad"><i class="fa-brands fa-twitter"></i></a>
             </div>
-            <a href="https://drive.google.com/file/d/1Ed5qgR24c28tgVAjTJlc0ocFR8mdCEsI/view?usp=sharing" class="btn">View Resume</a>
+            <a href="https://drive.google.com/file/d/1g9Hk0cw_lOLg08B0nz6id2320wQDtX_7/view?usp=drive_link" class="btn">View Resume</a>
         </div>
         <div class="profile-pic">
             <img src="images/mypic2.jpg" alt="profile pic" />
@@ -193,15 +193,32 @@
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="full-name" class="item" autocomplete="off">
+                    <div class="error-txt">This field is required</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email-add" class="item" autocomplete="off">
+                    <div class="error-txt">This field is required</div>
+                </div>
             </div>
 
             <div class="input-box">
-                <input type="tel" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <div class="input-field field">
+                    <input type="text" placeholder="Mobile Number" id="mobile-number" class="item" autocomplete="off">
+                    <div class="error-txt">This field is required</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">This field is required</div>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+            <div class="text-area field">
+                <textarea name="user_msg" id="txt-msg" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Please type a Message</div>
+            </div>
+            
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
