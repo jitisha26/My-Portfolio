@@ -73,3 +73,11 @@ form.addEventListener('submit', (evt)=>{
     evt.preventDefault();
     checkValidInput([fname, email, mobNum, subject, message]);
 });
+
+
+const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
